@@ -1,0 +1,80 @@
+/* General styling for the search container */
+.search-reviews-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  /* Styling the input field */
+  .search-input input {
+    width: 80%;
+    padding: 0.8rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .search-input input:focus {
+    outline: none;
+    border-color: #3498db;
+  }
+  
+  /* Styling the button */
+  .search-input button {
+    padding: 0.8rem 1.2rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-input button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Reviews list styling */
+  .reviews-list {
+    margin-top: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .reviews-list h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  .reviews-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .reviews-list li {
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .reviews-list li:last-child {
+    border-bottom: none;
+  }
+  
+  .reviews-list p {
+    margin: 0.5rem 0;
+  }
+  
+  /* Loading text styling */
+  .loading {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #3498db;
+  }
+  
