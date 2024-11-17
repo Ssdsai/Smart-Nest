@@ -1,0 +1,31 @@
+.inventory-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0; /* Adjust margin as needed */
+  }
+  
+  .inventory-table th, .inventory-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .product-name {
+    white-space: nowrap; /* Prevent line breaks */
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis; /* Add ellipsis for long names */
+  }
+  
+  .inventory-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  .inventory-table td {
+    vertical-align: middle; /* Center align text vertically */
+  }
+  
+  .chart
+  {
+
+  }
