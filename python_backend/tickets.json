@@ -1675,5 +1675,12 @@
         "status": "'replace_order'\n\nthe image description indicates that the cardboard box is wet after rain, which suggests signs of being drenched. according to the instructions, if the package appears wet or shows signs of being drenched, the correct action is to respond with 'replace_order' and explain the specific issue observed. thus, the appropriate response here is to replace the order due to the box being wet from rain.",
         "image_url": "D:/hw1/smart-nest/python_backend/images\\701a8c14-b277-486e-a263-d107fd2c7855.jpg",
         "final_decision": "Replace Order"
+    },
+    {
+        "ticket_number": "8bc9a749-cb89-4360-9240-2e6fd6cd25f5",
+        "description": "",
+        "status": "the image data appears to show a package with clear structural damage. specific observations include:\n\n- there are noticeable dents and crushed areas on the package, which affect its overall shape and integrity.\n- there are large tears visible on one side of the package.\n\nbased on this analysis, the correct action to take is **'refund_order'** due to the structural damage observed.",
+        "image_url": "D:/hw1/smart-nest/python_backend/images\\8bc9a749-cb89-4360-9240-2e6fd6cd25f5.jpg",
+        "final_decision": "Refund Order"
     }
 ]

@@ -20,7 +20,7 @@ if not OPENAI_API_KEY:
     raise ValueError("OpenAI API key not found. Set it in the .env file.")
 
 # Initialize OpenAI model
-llm = ChatOpenAI(model="gpt-4-turbo", temperature=0.7, openai_api_key=OPENAI_API_KEY)
+llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.7, openai_api_key=OPENAI_API_KEY)
 
 # Define the path for the tickets JSON file
 TICKETS_FILE = "tickets.json"
