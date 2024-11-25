@@ -18,3 +18,11 @@ Creates the WAR File to deploy
 Later you may deploy the WAR file in http://localhost:8080
 
 
+1. Run the React Server First - npm start
+2. Run your Apache TomCat server
+3. Then deploy the war file
+4. Connect to the MySQLDatabase and MongoDatabase change the credentials as needed
+5. Install Docker then Create a Elastic Search Container and note down the Elastic Search password
+6. You need to give your elastic search username and password also openapi key.
+7. Now Install OpenAI, Flask
+8. You can later check the recommend and review features.
