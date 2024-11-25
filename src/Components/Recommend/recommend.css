@@ -1,0 +1,85 @@
+/* General styling for the recommendation container */
+.recommend-product-container {
+    max-width: 1200px;           /* Set a larger maximum width for the container */
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+/* Styling the input field and button */
+.search-input {
+    width: 100%;                /* The container's width will adjust as needed */
+    display: flex;              /* Use flexbox to align input and button side by side */
+    align-items: center;        /* Vertically align input and button */
+}
+
+/* Styling the input field */
+.search-input input {
+    padding: 0.8rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    flex-grow: 1;               /* Allow input to take available space but respect container limits */
+}
+
+/* Styling the button */
+.search-input button {
+    padding: 0.8rem 1.2rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 0.8rem;        /* Space between input and button */
+    transition: background-color 0.3s ease;
+    flex-shrink: 0;             /* Prevent button from shrinking */
+}
+
+/* Button hover effect */
+.search-input button:hover {
+    background-color: #2980b9;
+}
+
+/* Products list styling */
+.products-list {
+    margin-top: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for product header and list items */
+.products-list h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.products-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.products-list li {
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.products-list li:last-child {
+    border-bottom: none;
+}
+
+.products-list p {
+    margin: 0.5rem 0;
+}
+
+/* Loading text styling */
+.loading {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #3498db;
+}

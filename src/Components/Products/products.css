@@ -1,0 +1,222 @@
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Automatically adjust number of columns */
+  gap: 40px; /* Increased gap between the boxes */
+}
+
+.box {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%; /* Use 100% of the allocated grid space */
+  max-width: 250px; /* Set a maximum width */
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.3s;
+  overflow: hidden; /* Ensure no content spills out of the box */
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: space-between; /* Ensure content is spaced between the top and bottom */
+}
+
+.box:hover {
+  transform: scale(1.05);
+}
+
+.box-image {
+  width: 100%;
+  height: auto;
+}
+
+.box-name {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.box-price {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.box-description {
+  margin-bottom: 10px;
+}
+
+/* Main Add to Cart Button */
+.add-to-cart-button-main {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px; /* Larger padding for the main button */
+  cursor: pointer;
+  border-radius: 5px; /* Rounded corners */
+  font-size: 1em; /* Larger text */
+  font-weight: bold; /* Bold text */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+  margin-top: 10px; /* Space above the button */
+  align-self: center; /* Center the button horizontally */
+}
+
+.add-to-cart-button-main:hover {
+  background-color: #45a049;
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Accessory Section */
+.box-accessories {
+  text-align: left;
+  margin-top: 10px; /* Reduced top margin to minimize gap */
+  overflow: auto; /* Allow scrolling if needed */
+}
+
+/* Accessories Grid: 2 accessories per row */
+.accessories-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Set exactly 2 columns for accessories */
+  gap: 20px;
+  width: 100%; /* Ensure the accessories grid takes full width of the parent box */
+  box-sizing: border-box; /* Include padding and borders in the element's width and height */
+}
+
+/* Accessory Box */
+.accessory {
+  border: 1px solid #999;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  overflow: hidden; /* Ensure no content spills out of the box */
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: space-between; /* Ensure content takes up available space */
+}
+
+.accessory-name {
+  font-size: 1em;
+  margin-bottom: 5px;
+}
+
+.accessory-price {
+  color: #555;
+  margin-bottom: 5px;
+}
+
+/* Accessory Add to Cart Button */
+.add-to-cart-button-accessory {
+  background-color: #4CAF50; /* Green background */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 3px; /* Rounded corners */
+  padding: 5px 10px; /* Padding for the button */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 0.9em; /* Slightly smaller text for accessories */
+  transition: background-color 0.3s; /* Transition effect for background color */
+}
+
+.add-to-cart-button-accessory:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Optional: Style for the selected state */
+.box.selected {
+  border-color: #4CAF50; /* Highlight the selected box */
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the buttons and quantity display */
+  margin-top: 10px;
+}
+
+.quantity-controls button {
+  font-size: 24px;
+  border-radius: 5px;
+  padding: 8px 12px; /* Adjust padding to make buttons fit */
+  margin: 0 5px; /* Space between buttons */
+}
+
+.quantity-button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.quantity-button:hover {
+  background-color: #0056b3;
+}
+
+.quantity-controls span {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 15px; /* Add spacing between the quantity display */
+}
+
+/* Accessory Button */
+.accessory-quantity-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Space between the incrementer buttons */
+  margin-top: 5px; /* Reduced margin for accessory controls */
+}
+
+.accessory-quantity-button {
+  background-color: #007BFF; /* Primary button color */
+  color: white;
+  border: none;
+  border-radius: 3px; /* Smaller border radius */
+  padding: 5px 10px; /* Reduced padding */
+  font-size: 16px; /* Smaller font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.accessory-quantity-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Disable cursor change for the added state */
+.add-to-cart-button-main.added,
+.add-to-cart-button-accessory.added {
+  background-color: #45a049;
+  cursor: default; /* Disable cursor change for the added state */
+}
+
+.product-sections {
+  margin: 20px;
+}
+
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.products-container > * {
+  flex: 1 1 calc(20% - 20px); /* Adjust percentage as needed */
+}
+
+/* Highlight the selected box */
+.box.selected {
+  border-color: #4CAF50; /* Highlight the selected box */
+}
+
+
+.accessory-cart-status
+{
+  font-size: 20px;
+}
+
+.accessory-cart-status button
+{
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 1px 3px; /* Adjust padding to make buttons fit */
+  margin: 0 5px;
+}
+
+.box-price p
+{
+  margin-top: -15px;
+}
