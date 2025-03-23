@@ -1,3 +1,9 @@
+## Smart-Nest
+
+Built a Smart Home product management application, the frontend with React and implemented backend functionality using Java Servlets to enable efficient CRUD operations and product catalog management.
+•
+Managed MySQL and MongoDB databases, integrated Elasticsearch for enhanced search with semantic search embeddings, and Leveraged the Open AI API for LLM-, Designed a multi-role system (Customers, Store Managers, Salesmen) with authentication and order tracking.
+
 ## Frontend App Server
 
 In the project directory, you can run:
